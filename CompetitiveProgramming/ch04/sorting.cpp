@@ -12,16 +12,19 @@ void bubbleSort(int array[], int size);
 void merge(int arr[], int left, int right);
 void partial(int arr[], int left, int right);
 
-int main() {
-    int testArray[8] = { 3,5,2,7,4,1,8,6 };
+int findMax(int arr[], int size);
+void CountingSort(int arr[], int size);
+
+int main()
+{
+    int testArray[8] = { 3,5, 3,7,4,1,8,6 };
     int size = 8;
-    partial(testArray, 0, size - 1);
+    CountingSort(testArray, size);
     for (int i = 0; i < 8; i++) {
         cout << testArray[i] << " ";
     }
         return 0;
 }
-
 
 void bubbleSort(int array[], int size) {
     for (int i = 0; i < size; i++)
@@ -82,4 +85,36 @@ void merge(int arr[], int left, int right) {
     for (int i = left; i < k; i++) {
         arr[i] = sorted[i];
     }
+}
+
+void CountingSort(int arr[], int size) {
+    int max = findMax(arr, size);
+
+    int counting[max] = { 0, };
+    for (int i = 0; i < size; i++)
+    {
+        counting[arr[i]-1]++;
+    }
+
+
+    for (int i = 0; i < max; i++)
+    {
+        if(counting[i] != 0) {
+            for (int j = 0; j < counting[i]; j++)
+            {
+                cout << i + 1<< " ";
+            }
+        }
+        cout << "\n";
+    }
+}
+
+int findMax(int arr[], int size) {
+    int max = 0;
+    for (int i = 0; i < size; i++)
+    {
+        if(arr[i] > max)
+            max = arr[i];
+    }
+    return max;
 }

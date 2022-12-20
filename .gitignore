@@ -1,7 +1,10 @@
 .vscode/tasks.json
 .vscode/settings.json
 CompetitiveProgramming/ch03/MaximumSubArraySum
-CompetitiveProgramming/ch03/doubleQueen.cpp
 
 # Unignore all with extensions
 !*.*
+
+.vscode/settings.json
+.vscode/tasks.json
+CompetitiveProgramming/ch03/doubleQueen.cpp
