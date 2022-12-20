@@ -61,7 +61,9 @@ void OnMSAS(int n, int array[]) {
     for (int i = 0; i < n; i++)
     {
         sum = max(array[i], sum + array[i]);
+        cout << "sum: " << sum << "\n";
         best = max(best, sum);
+        cout << "best: " << best << "\n";
     }
     cout << best << "\n";
     cout << "O(n)"
