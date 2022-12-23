@@ -90,10 +90,15 @@ void merge(int arr[], int left, int right) {
 void CountingSort(int arr[], int size) {
     int max = findMax(arr, size);
 
-    int counting[max] = { 0, };
+    int counting[size];
+    for (int i = 0; i< size; i++) 
+    {
+        counting[i] = 0;
+    }
+
     for (int i = 0; i < size; i++)
     {
-        counting[arr[i]-1]++;
+        counting[arr[i] - 1]++;
     }
 
 
