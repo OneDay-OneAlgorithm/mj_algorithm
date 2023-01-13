@@ -22,4 +22,5 @@ input.sort((a, b) => {
     return -1;
   }
 });
+
 console.log(input.map((v) => v.join(' ')).join('\n'));
