@@ -13,6 +13,7 @@ const [N, M] = input.map((v) => parseInt(v));
 const numbers = [];
 const isUsed = new Array(N + 1).fill(false);
 
+// index보다 큰 값만 call push할 수 있도록 함수의 인자로 전달하여 기억한다.
 function backtracking(idx, depth) {
   if (depth === M) {
     console.log(numbers.join(' '));
