@@ -1,5 +1,7 @@
 # algorithm
 
+![](https://api.mosu.blog/minai621/mj_algorithm?since=2024-06-30&until=2024-08-31)
+
 # setting default snippet
 
 1. ctrl + shift + p
