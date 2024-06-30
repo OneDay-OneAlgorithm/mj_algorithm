@@ -2,6 +2,6 @@
 
 1부터 n까지의 덧셈을 구현할 때 일일히 반복해서 더하는 것보다 n(n+1) / 2로 계산하는 것이 더 빠르다.
 
-![alt text](image.png)
+![alt text](../../images/image.png)
 
 사전에서 technology 라는 단어를 탐색할 때, a부터 aa, ab, ac, ... zzz까지 모두 탐색하는 것보다 `technology라는 단어가 어디쯤에 있을 것인지 예측해서 탐색` 범위를 줄이는게 빠르다.
